@@ -1,0 +1,16 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]=16 [minZoom]=10 [maxZoom]=22>
+  <agm-marker [latitude]="lat" [longitude]="lng">
+    <agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true">
+      <ng-template>
+        My first Snazzy Info Window! My first Snazzy Info Window! My first Snazzy Info Window! My first Snazzy Info Window!
+      </ng-template>
+    </agm-snazzy-info-window>
+  </agm-marker>
+  <agm-marker [latitude]="lat-0.01" [longitude]="lng">
+    <agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true">
+      <ng-template>
+        My second Snazzy Info Window!
+      </ng-template>
+    </agm-snazzy-info-window>
+  </agm-marker>
+</agm-map>
