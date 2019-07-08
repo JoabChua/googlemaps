@@ -1,0 +1,42 @@
+mwlResizable {
+  box-sizing: border-box; // required for the enableGhostResize option to work
+}
+
+.test-resize {
+  border: black solid 1px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  max-width: 50%;
+}
+
+.div1 {
+  position: relative;
+  width: 30vw;
+  height: 20vh;
+  background: lightblue;
+  flex-grow: 0;
+}
+
+.div2 {
+  position: relative;
+  width: 30vw;
+  height: 20vh;
+  background: green;
+  flex-grow: 0;
+}
+
+.div3 {
+  position: relative;
+  width: 20vw;
+  height: 20vh;
+  background: pink;
+}

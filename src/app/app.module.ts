@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmMapComponent } from './agm-map/agm-map.component';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { ResizableComponent } from './resizable/resizable.component';
+import { ResizableModule } from 'angular-resizable-element';
+import { ResizableDirective } from './directives/resizable.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AgmMapComponent
+    AgmMapComponent,
+    ResizableComponent,
+    ResizableDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgmCoreModule.forRoot(),
-    AgmSnazzyInfoWindowModule
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    }),
+    AgmSnazzyInfoWindowModule,
+    ResizableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
